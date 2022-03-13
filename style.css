@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+.search {
+  position: relative;
+  height: 50px;
+}
+
+.input {
+  padding: 0 15px;
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  transition: width 0.3s ease;
+}
+
+.btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.search.active .input {
+  width: 200px;
+}
+
+.search.active .btn {
+  transform: translateX(198px);
+}
